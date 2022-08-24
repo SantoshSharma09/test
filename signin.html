@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      img {
+        display: flex;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+      #conatiner {
+        width: 30%;
+        height: 500px;
+        display: flex;
+        margin: auto;
+        padding-bottom: 10px;
+        /* padding-right: 40px; */
+        /* border: 1px solid black; */
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      form {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+      }
+      h2,
+      p {
+        text-align: center;
+      }
+      form input,
+      button {
+        height: 35px;
+        border-radius: 8px;
+        font-size: 20px;
+      }
+      label {
+        font-size: 20px;
+      }
+      #pass {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="img">
+      <img src="https://sso.masaischool.com/brand_dark.svg" alt="" />
+    </div>
+
+    <div id="conatiner">
+      <form>
+        <h2>Sign In</h2>
+        <!-- <label for="">Full Name</label>
+        <input type="text" id="name" placeholder="Enter yor full name" />
+        <br /> -->
+        <label for="">Email</label>
+        <input type="text" id="email" placeholder="Enter email" />
+        <br />
+        <div id="pass">
+          <label for="">Password</label>
+          <label style="color: blue" for="">Forget Password ?</label>
+        </div>
+        <input type="text" id="password" placeholder="Enter password" />
+        <br />
+        <!-- <p>
+          By signing up, I accept the Masai School term of Service and
+          acknowledge the Privacy Policy
+        </p> -->
+        <button type="submit">Sign In</button>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- <script>
+  document.querySelector("form").addEventListener("submit", signin);
+
+  let m = localStorage.getItem("username");
+
+  let n = localStorage.getItem("email");
+
+  let o = localStorage.getItem("password");
+
+  function signin() {
+    event.preventDefault();
+    let y = document.querySelector("#email").value;
+
+    let z = document.querySelector("#password").value;
+    if (y !== n || z !== o) {
+      alert("Wrong username or password");
+    } else {
+      alert("login successfull");
+    }
+  }
+</script> -->
